@@ -1,0 +1,37 @@
+date: 2026-09-15
+symbols_selected: 26
+parquet_files: 26
+total_trade_rows: 21457
+touched_limit: 25
+close_locked: 23
+failures: 0
+output_dir: /workspace/exports/tw-limitup-ticks-data/ticks/2026-09-15
+manifest: /workspace/exports/tw-limitup-ticks-data/ticks/2026-09-15/manifest.json
+
+symbols:
+    2468  chg=9.91  touched=True  locked=True  rows=2098  華經
+    3021  chg=9.8  touched=True  locked=True  rows=214  鴻名
+    3232  chg=9.95  touched=True  locked=True  rows=91  昱捷
+    3297  chg=9.98  touched=True  locked=True  rows=129  杭特
+    3434  chg=9.98  touched=True  locked=True  rows=316  哲固
+    3467  chg=9.94  touched=True  locked=True  rows=104  台灣精材
+    3523  chg=9.69  touched=True  locked=True  rows=12  迎輝
+    3629  chg=8.89  touched=False  locked=False  rows=3  地心引力
+    3664  chg=9.89  touched=True  locked=True  rows=9  安瑞-KY
+    4807  chg=10  touched=True  locked=True  rows=148  日成-KY
+    4924  chg=9.76  touched=True  locked=True  rows=52  欣厚-KY
+    5202  chg=9.69  touched=True  locked=True  rows=465  力新
+    5251  chg=10  touched=True  locked=True  rows=244  天鉞電
+    5355  chg=9.92  touched=True  locked=True  rows=99  佳總
+    6140  chg=9.86  touched=True  locked=True  rows=60  訊達
+    6148  chg=9.97  touched=True  locked=True  rows=1182  驊宏資
+    6218  chg=9.93  touched=True  locked=True  rows=1361  豪勉
+    6221  chg=9.96  touched=True  locked=True  rows=130  晉泰
+    6226  chg=10  touched=True  locked=True  rows=13176  光鼎
+    6590  chg=9.92  touched=True  locked=True  rows=69  普鴻
+    6683  chg=8.61  touched=True  locked=False  rows=679  雍智科技
+    6870  chg=8.05  touched=True  locked=False  rows=164  騰雲
+    6925  chg=9.96  touched=True  locked=True  rows=41  意藍
+    6945  chg=9.72  touched=True  locked=True  rows=299  圓祥生技
+    8038  chg=10  touched=True  locked=True  rows=234  長園科
+    8045  chg=9.93  touched=True  locked=True  rows=78  達運光電
