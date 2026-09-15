@@ -1,0 +1,2 @@
+# Store tick Parquet archives with Git LFS (required for GitHub storage).
+ticks/**/*.parquet filter=lfs diff=lfs merge=lfs -text

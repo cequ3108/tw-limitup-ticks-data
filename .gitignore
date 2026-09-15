@@ -1,0 +1,41 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets and local credentials — never commit
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.pem
+*.key
+secrets/
+certs/
+*.cert
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.python-version
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# Local pipeline output (committed archives should be added explicitly)
+/tmp/
