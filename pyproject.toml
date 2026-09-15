@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tw-limitup-ticks"
+version = "0.1.0"
+description = "Near-limit Taiwan stock tick archive pipeline using Fubon Neo"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Private / personal research — see README" }
+authors = [{ name = "tw-limitup-ticks-data maintainers" }]
+dependencies = [
+    "pandas>=2.0",
+    "pyarrow>=14",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+tw-limitup-ticks = "tw_limitup_ticks.cli:main"
+
+[project.urls]
+Documentation = "https://www.fbs.com.tw/TradeAPI/docs/market-data/http-api/getting-started"
+SDK = "https://www.fbs.com.tw/TradeAPI/docs/sdk/sdk-download"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"

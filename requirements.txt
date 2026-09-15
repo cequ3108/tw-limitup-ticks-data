@@ -1,0 +1,12 @@
+# PyPI dependencies for the archive pipeline.
+pandas>=2.0
+pyarrow>=14
+python-dotenv>=1.0
+
+# fubon_neo is the official Fubon Neo SDK. It is NOT published on PyPI.
+# Download the platform wheel from:
+#   https://www.fbs.com.tw/TradeAPI/docs/sdk/sdk-download
+# then install, for example:
+#   pip install fubon_neo-2.3.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+#
+# Dry-run / CI (`--dry-run`) does not require fubon_neo.

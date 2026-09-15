@@ -1,0 +1,29 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install package (no fubon_neo)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+      - name: Unit tests (mock client)
+        run: pytest
+      - name: Dry-run archive CLI
+        run: |
+          python -m tw_limitup_ticks archive --dry-run --out /tmp/ticks-dry
+          test -f /tmp/ticks-dry/2024-04-30/manifest.json
+          python -m tw_limitup_ticks select --dry-run
+          python scripts/select.py --dry-run -o /tmp/select.json
+          python scripts/fetch.py --dry-run --candidates /tmp/select.json --output-dir /tmp/trades-dry
+          python scripts/write.py --dry-run --candidates /tmp/select.json --trades-dir /tmp/trades-dry --out /tmp/ticks-write
+          test -f /tmp/ticks-write/2024-04-30/2345.parquet
