@@ -1,11 +1,31 @@
 from __future__ import annotations
 
 import json
+import subprocess
+import sys
 from pathlib import Path
 
 from tw_limitup_ticks.cli import main
 from tw_limitup_ticks.config import ConfigError, FubonCredentials
 from tw_limitup_ticks.timeutil import micros_to_taipei
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def test_script_select_does_not_shadow_stdlib(tmp_path: Path):
+    """`python scripts/select.py` must not shadow stdlib select (CI failure mode)."""
+    output = tmp_path / "candidates.json"
+    completed = subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "select.py"), "--dry-run", "-o", str(output)],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    assert completed.returncode == 0
+    payload = json.loads(output.read_text(encoding="utf-8"))
+    assert payload["date"] == "2024-04-30"
+    assert {item["symbol"] for item in payload["symbols"]} == {"2345", "2303", "6488"}
 
 
 def test_cli_select_dry_run(capsys):
