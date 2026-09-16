@@ -1,0 +1,66 @@
+date: 2026-09-16
+symbols_selected: 55
+parquet_files: 55
+total_trade_rows: 113608
+touched_limit: 48
+close_locked: 45
+failures: 0
+output_dir: /workspace/exports/tw-limitup-ticks-data/ticks/2026-09-16
+manifest: /workspace/exports/tw-limitup-ticks-data/ticks/2026-09-16/manifest.json
+
+symbols:
+    1709  chg=10  touched=True  locked=True  rows=3085  和益
+    2033  chg=10  touched=True  locked=True  rows=306  佳大
+    2061  chg=9.96  touched=True  locked=True  rows=629  風青
+    2221  chg=9.78  touched=True  locked=True  rows=3188  大甲
+    2302  chg=9.95  touched=True  locked=True  rows=1440  麗正
+    2305  chg=9.9  touched=True  locked=True  rows=4943  全友
+    2338  chg=9.98  touched=True  locked=True  rows=7528  光罩
+    2413  chg=9.96  touched=True  locked=True  rows=1693  環科
+    2426  chg=9.91  touched=True  locked=True  rows=12892  鼎元
+    2481  chg=9.77  touched=True  locked=True  rows=13824  強茂
+    2489  chg=10  touched=True  locked=True  rows=6937  瑞軒
+    2493  chg=9.94  touched=True  locked=True  rows=923  揚博
+    3021  chg=9.94  touched=True  locked=True  rows=286  鴻名
+    3138  chg=9.94  touched=True  locked=True  rows=98  耀登
+    3162  chg=8.09  touched=False  locked=False  rows=865  精確
+    3234  chg=8.56  touched=True  locked=False  rows=1193  光環
+    3354  chg=9.91  touched=True  locked=True  rows=862  律勝
+    3406  chg=9.84  touched=True  locked=True  rows=1880  玉晶光
+    3441  chg=9.73  touched=True  locked=True  rows=3969  聯一光
+    3450  chg=9.85  touched=True  locked=True  rows=3255  聯鈞
+    3498  chg=9.8  touched=True  locked=True  rows=1005  陽程
+    3532  chg=8.11  touched=False  locked=False  rows=3681  台勝科
+    3605  chg=9.8  touched=True  locked=True  rows=5120  宏致
+    3623  chg=9.02  touched=True  locked=False  rows=246  富晶通
+    3675  chg=9.85  touched=True  locked=True  rows=675  德微
+    3718  chg=8.89  touched=False  locked=False  rows=1880  中光電投控
+    4744  chg=9.84  touched=True  locked=True  rows=160  皇將
+    4956  chg=9.98  touched=True  locked=True  rows=1421  光鋐
+    4971  chg=9.96  touched=True  locked=True  rows=910  IET-KY
+    4977  chg=9.97  touched=True  locked=True  rows=1820  眾達-KY
+    5464  chg=9.98  touched=True  locked=True  rows=465  霖宏
+    6103  chg=9.88  touched=True  locked=True  rows=12  合邦
+    6129  chg=9.96  touched=True  locked=True  rows=263  普誠
+    6168  chg=9.91  touched=True  locked=True  rows=4436  宏齊
+    6179  chg=8.18  touched=False  locked=False  rows=3733  亞通
+    6218  chg=9.85  touched=True  locked=True  rows=4427  豪勉
+    6226  chg=9.92  touched=True  locked=True  rows=913  光鼎
+    6291  chg=9.98  touched=True  locked=True  rows=822  沛亨
+    6426  chg=10  touched=True  locked=True  rows=1139  統新
+    6560  chg=9.89  touched=True  locked=True  rows=62  欣普羅
+    6588  chg=10  touched=True  locked=True  rows=454  東典光電
+    6617  chg=9.96  touched=True  locked=True  rows=536  共信-KY
+    6620  chg=9.84  touched=True  locked=True  rows=657  漢達
+    6683  chg=10  touched=True  locked=True  rows=945  雍智科技
+    6715  chg=9.93  touched=True  locked=True  rows=1586  嘉基
+    6933  chg=9.97  touched=True  locked=True  rows=555  AMAX-KY
+    6945  chg=9.59  touched=True  locked=True  rows=209  圓祥生技
+    7711  chg=9.83  touched=True  locked=True  rows=655  永擎
+    7717  chg=9.91  touched=True  locked=True  rows=498  萊德光電-KY
+    7799  chg=9.99  touched=True  locked=True  rows=767  禾榮科
+    7825  chg=8.64  touched=False  locked=False  rows=382  和亞智慧
+    7828  chg=8.67  touched=False  locked=False  rows=195  創新服務
+    8064  chg=9.72  touched=True  locked=True  rows=1260  東捷
+    8227  chg=9.02  touched=True  locked=False  rows=133  巨有科技
+    8431  chg=8.15  touched=False  locked=False  rows=1790  匯鑽科
